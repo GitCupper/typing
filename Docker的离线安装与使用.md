@@ -379,7 +379,7 @@ docker pull nacos/nacos-server
 #### 3.2.1 初次启动
 
 ```shell
-docker run --env MODE=standalone --name nacos -d -p 8848:8848 nacos/nacos-server
+docker run --env MODE=standalone --restart=always  --name nacos -d -p 8848:8848 nacos/nacos-server
 ```
 
 #### 3.2.2 再次启动

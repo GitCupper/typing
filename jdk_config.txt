@@ -1,0 +1,9 @@
+JAVA_HOME
+C:\Java\jdk1.8.0_311
+
+CLASSPATH
+.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar
+
+PATH
+%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
+
