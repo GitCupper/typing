@@ -130,11 +130,11 @@
    >
    > `mkdir aaa bbb ccc` 在当前目录创建多个目录
    >
-   > `mkdir {1..10}` 在ddd目录下创建一个eee目录
+   > `mkdir {1..10}` 在当前目录下创建1到10命名的10个目录
    >
    > `mkdir /ddd/eee` 在ddd目录下创建一个eee目录
    >
-   > `mkdir -p a/b/c/d/` 创建多级目录（创建后效果：/a/b/c/d）
+   > `mkdir -p a/b/c/d/` 创建多级目录（创建后效果：/a/b/c/d），-p为级联创建
 
 ## 二、文件命令
 
