@@ -361,6 +361,8 @@ $ docker ps -a
 $ docker image save -o nacos.tar nacos/nacos-server
 # 从压缩包加载镜像
 $ docker load --input nacos.tar
+# 查看容器日志
+$ docker logs ${容器名/容器ID} # 查看容器日志
 
 ```
 
