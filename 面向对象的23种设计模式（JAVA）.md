@@ -22,6 +22,14 @@
 
 软件设计模式使人们可以更加简单方便地复用成功的设计和体系结构，它通常包含以下几个基本要素：
 
+
+
+## 二、软件开发设计原则
+
+### 1. 开闭原则
+
+*开闭原则（Open Closed Principle, OCP）*由勃兰特·梅耶提出，他在1988年的著作《面向对象软件构造》（Object Oriented Software Construction）中提出：软件实体应当对扩展开放，对修改关闭（Software entities should be open for extension, but closed for modification），这就是开闭原则的经典定义。
+
 ## 二、行为型模式
 
 ### 1. 访问者模式（Visitor）
