@@ -30,6 +30,19 @@
 
 *开闭原则（Open Closed Principle, OCP）*由勃兰特·梅耶提出，他在1988年的著作《面向对象软件构造》（Object Oriented Software Construction）中提出：软件实体应当对扩展开放，对修改关闭（Software entities should be open for extension, but closed for modification），这就是开闭原则的经典定义。
 
+### 2. 里氏替换原则
+
+*里氏替换原则（Liskov Substitution Principle，LSP）*由麻省理工学院计算机科学实验室的里斯科夫（Liskov）女士在1987年的“面向对象技术的高峰会议”（OOPSLA）上发表的一篇文章《数据抽象和层次》（Data Abstraction and Hierarchy）里提出来的，他提出：继承必须确保超类所拥有的性质在子类中 仍然成立（Inheritance should ensure that any property proved about supertype objects also holds for subtype object）。
+
+#### 里氏替换原则的作用
+
+里氏替换原则的主要作用如下。
+
+1. 里氏替换原则是实现开闭原则的重要方式之一；
+2. 它克服了继承中重写父类造成的可复用性变差的缺点；
+3. 它是动作正确性的保证。即类的扩展不会经已有的系统引入新的错误，降低了代码出错的可能性；
+4. 加强程序的健壮性，同时变更时可以做到非常好的兼容性，提高程序的维护性、可扩展性，降低需求变更时引入的风险。
+
 ## 二、行为型模式
 
 ### 1. 访问者模式（Visitor）
