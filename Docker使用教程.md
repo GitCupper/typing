@@ -1291,9 +1291,17 @@ OK
 # 拉取镜像
 $ docker pull rabbitmq
 # 创建容器
-$ docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 -v `pwd`/data:/var/lib/rabbitmq --hostname myRabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost  -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin df80af9ca0c9
+$ docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 -v `pwd`/data:/var/lib/rabbitmq --hostname myRabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost  -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin rabbitmq
+# 另一创建容器的方法
+$ docker run -di --name rabbitmq -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin -p 15672:15672 -p 5672:5672 -p 25672:25672 -p 61613:61613 -p 1883:1883 rabbitmq:management
 # 查看正在运行的容器
 $ docker ps -a
+# 开放防火墙端口
+$ systemctl status firewalld
+$ firewall-cmd --zone=public --add-port=1/tcp --permanent
+$ firewall-cmd --reload
+$ firewall-cmd --list-ports
+
 ```
 
 说明：
