@@ -122,5 +122,15 @@ docker logout: 退出登录
 docker pull: 拉取或者更新指定镜像 -a 拉取所有的tag的镜像
 
 docker push: 将本地的镜像上传到镜像仓库
+
+docker search:  
+```
+
+镜像的结构：
+
+```shell
+${registry_name}/${repository_name}/${image_name}:${tag_name}
+# 例如：
+docker.io/library/alpine:3.10.1
 ```
 
