@@ -262,3 +262,17 @@
 
    > `more -5 /etc/passwd` 一屏显示5行/etc/passwd内容，可指定数字
 
+
+
+
+
+## 未分类
+
+查看服务器配置
+
+``` shell
+$ df -Th 
+$ cat /proc/cpuinfo # 查看cup信息
+
+```
+
